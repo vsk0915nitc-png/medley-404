@@ -1,13 +1,13 @@
-MEDLEY 2026 — WANTED / MYSTERY EDITION
+# MEDLEY 2026 — Wanted Mystery Website
+
+Upload all files and the `assets` folder to the root of the GitHub Pages repository.
+
+Keep `index.html` as the homepage. The fundraiser poster is `assets/fundraiser-poster.png` and is the exact uploaded poster, including its QR code.
 
 Pages:
-index.html = Home
-donate.html = Fundraiser
-sports.html = Sports schedule + Linktree
-events.html = Mystery/loading event details
-style.css = Shared theme
-assets/medley-classified.png = supplied MEDLEY poster
+- index.html — Home
+- donate.html — Fundraiser
+- sports.html — Sports Schedule
+- events.html — Event Details / loading researchers
 
-Upload the contents of this folder to the root of the medley-404 GitHub repository.
-Keep index.html, style.css and the assets folder in the repository root.
-The existing GitHub Pages configuration can remain unchanged.
+The QR in the fundraiser poster remains embedded in the original image.
