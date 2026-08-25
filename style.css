@@ -37,3 +37,28 @@
 .qr-grid-direct .qr-card p{font-size:.64rem;line-height:1.4;}
 @media(max-width:900px){.fundraiser-layout{grid-template-columns:1fr}.funding-panel{padding:20px}}
 @media(max-width:560px){.qr-grid-direct{grid-template-columns:1fr}.qr-grid-direct .qr-card img{max-width:320px;margin:auto}}
+/* Restored glowing evidence scanner */
+.scanner-frame{position:relative;justify-self:end;width:min(100%,560px);padding:18px;background:linear-gradient(145deg,#171311,#090909);border:1px solid #c8aa6750;box-shadow:0 24px 80px #000c,0 0 35px #c8aa6712;overflow:hidden}
+.scanner-frame:before{content:"";position:absolute;inset:8px;border:1px solid #c8aa6718;pointer-events:none;z-index:3}
+.scanner-frame img{display:block;width:100%;max-width:none;margin:0;transform:none!important;filter:saturate(.88) contrast(1.04);border:1px solid #c8aa6730;box-shadow:none}
+.scanner-label{position:absolute;left:28px;top:27px;z-index:5;padding:6px 9px;background:#090909d9;border:1px solid #c8aa6760;color:#e4cf9e;font:600 .68rem 'IBM Plex Mono',monospace;letter-spacing:.12em;box-shadow:0 0 18px #c8aa6720}
+.scan-line{position:absolute;left:18px;right:18px;top:18px;height:2px;background:linear-gradient(90deg,transparent,#f3d98a,#fff4c8,#c8aa67,transparent);box-shadow:0 0 10px #f3d98a,0 0 24px #c8aa67;z-index:4;animation:scannerSweep 3.2s ease-in-out infinite}
+.scanner-frame:after{content:"";position:absolute;inset:18px;background:linear-gradient(180deg,transparent 0%,#c8aa6708 48%,#c8aa6710 50%,transparent 100%);pointer-events:none;z-index:2}
+.scan-corner{position:absolute;width:22px;height:22px;border-color:#e4cf9e;border-style:solid;z-index:5;filter:drop-shadow(0 0 6px #c8aa67)}
+.scan-corner.c1{left:23px;top:23px;border-width:2px 0 0 2px}.scan-corner.c2{right:23px;top:23px;border-width:2px 2px 0 0}.scan-corner.c3{left:23px;bottom:23px;border-width:0 0 2px 2px}.scan-corner.c4{right:23px;bottom:23px;border-width:0 2px 2px 0}
+@keyframes scannerSweep{0%,100%{top:18px;opacity:.45}45%{opacity:1}50%{top:calc(100% - 20px)}55%{opacity:1} }
+/* Strong card treatment for the dedicated sports page */
+.sports-page .sports-grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:24px;margin-top:28px}
+.sports-page .sport-card{min-height:410px;padding:28px;background:radial-gradient(circle at 100% 0,#c8aa6720,transparent 30%),linear-gradient(155deg,#251c17,#0d0c0b 76%);border:1px solid #c8aa6750;border-radius:4px;box-shadow:0 20px 55px #000b, inset 0 1px #ffffff08;display:flex;flex-direction:column}
+.sports-page .sport-card:hover{transform:translateY(-10px) scale(1.015);box-shadow:0 30px 75px #000d,0 0 28px #c8aa6712}
+.sports-page .sport-icon{width:58px;height:58px;display:grid;place-items:center;margin:20px 0 12px;border:1px solid #c8aa6760;border-radius:50%;color:#e7d29b;font-size:1.7rem;background:#c8aa6709;box-shadow:0 0 25px #c8aa6710}
+.sports-page .sport-tag{font:600 .68rem 'IBM Plex Mono',monospace;letter-spacing:.14em;color:#9d9384;margin:0 0 22px}
+.sports-page .sport-events{margin-top:auto;display:grid;gap:10px}
+.sports-page .sport-events div{padding:12px 13px;border-left:2px solid #c8aa6750;background:#0a0908aa}
+.sports-page .sport-events b{display:block;color:#e8dece;font:600 .82rem 'IBM Plex Mono',monospace}
+.sports-page .sport-events span{display:block;color:#aaa092;font-size:.9rem;line-height:1.45;margin-top:4px}
+.sports-page .card-link{margin-top:22px;align-self:flex-start;padding:10px 12px;border:1px solid #c8aa6750;background:#c8aa6708}
+.sports-page .card-link:hover{background:#c8aa6718;border-color:#c8aa67}
+@media(max-width:1000px){.sports-page .sports-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:650px){.sports-page .sports-grid{grid-template-columns:1fr}.sports-page .sport-card{min-height:380px}.scanner-frame{justify-self:stretch}}
+.qr-card{position:relative}.qr-label{font:600 .66rem 'IBM Plex Mono',monospace;letter-spacing:.08em;margin-bottom:10px;color:#6d5b42}.qr-card img{min-height:260px}.qr-card:first-child img{image-rendering:auto}
