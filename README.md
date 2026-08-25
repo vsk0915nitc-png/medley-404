@@ -1,13 +1,18 @@
-# MEDLEY 2026 — Wanted Mystery Website
+# MEDLEY 2026 — Wanted / Mystery Website
 
-Upload all files and the `assets` folder to the root of the GitHub Pages repository.
+Files:
+- `index.html` — landing page + scrolling sports section
+- `donate.html` — fundraiser poster + both supplied QR codes
+- `sports.html` — tabbed sports schedule
+- `events.html` — classified loading/event-details page
+- `style.css`, `script.js` — shared styling and interactions
+- `assets/` — fundraiser poster, two QR codes, MEDLEY evidence image
 
-Keep `index.html` as the homepage. The fundraiser poster is `assets/fundraiser-poster.png` and is the exact uploaded poster, including its QR code.
+## GitHub Pages
+1. Upload all files/folders in this package to the repository root.
+2. Make sure `index.html` is directly in the root (not inside another folder).
+3. In GitHub: Settings → Pages → Deploy from a branch → `main` → `/ (root)` → Save.
+4. Wait for the Pages deployment to finish.
+5. Open `https://YOUR-USERNAME.github.io/YOUR-REPOSITORY/`
 
-Pages:
-- index.html — Home
-- donate.html — Fundraiser
-- sports.html — Sports Schedule
-- events.html — Event Details / loading researchers
-
-The QR in the fundraiser poster remains embedded in the original image.
+The individual sport buttons currently open the Linktree sports hub you supplied because individual form URLs were not provided.
