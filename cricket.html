@@ -1,0 +1,403 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Box Cricket — MEDLEY 2026</title>
+<link rel="stylesheet" href="style.css">
+<style>
+/* Cricket page additions — keeps the existing MEDLEY mystery theme */
+.cricket-hero{padding:75px 0 35px;position:relative;overflow:hidden}
+.cricket-hero:after{content:"";position:absolute;right:-120px;top:-100px;width:430px;height:430px;border:1px solid rgba(199,166,91,.16);border-radius:50%;box-shadow:0 0 0 28px rgba(199,166,91,.025),0 0 0 56px rgba(199,166,91,.015)}
+.cricket-kicker{font-family:"Permanent Marker";font-size:1.2rem;color:#d4c3a2;margin-bottom:14px}
+.cricket-title{font-family:"Bebas Neue";font-size:clamp(4rem,10vw,8rem);line-height:.82;letter-spacing:.035em;margin:0}
+.cricket-title em{font-style:normal;color:#c7a65b}
+.cricket-lead{max-width:820px;font-size:1.2rem;line-height:1.7;color:#c7c0b4;margin:25px 0}
+.cricket-stats{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:35px}
+.stat{padding:20px;border:1px solid rgba(199,166,91,.25);background:rgba(50,29,41,.6);border-radius:16px}
+.stat strong{display:block;font-family:"Bebas Neue";font-size:2.5rem;color:#c7a65b}
+.stat span{font-size:.82rem;color:#aaa094;text-transform:uppercase;letter-spacing:.08em}
+.cricket-section{padding:48px 0}
+.cricket-section h2{font-family:"Bebas Neue";font-size:3.8rem;letter-spacing:.04em;margin:0 0 9px}
+.cricket-section h2 em{font-style:normal;color:#c7a65b}
+.section-note{color:#aaa094;line-height:1.65;max-width:760px;margin-bottom:24px}
+.filter-row{display:flex;gap:8px;flex-wrap:wrap;margin:24px 0}
+.filter{border:1px solid rgba(199,166,91,.28);background:#ffffff06;color:#d8d0c3;border-radius:999px;padding:9px 13px;cursor:pointer;font-weight:700}
+.filter.active,.filter:hover{background:#c7a65b;color:#171311}
+.matches{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.match-card{padding:20px;border:1px solid rgba(199,166,91,.22);border-radius:18px;background:linear-gradient(145deg,rgba(64,39,50,.76),rgba(18,16,16,.88));transition:.28s;box-shadow:0 12px 30px #0005}
+.match-card:hover{transform:translateY(-6px) rotate(-.35deg);border-color:#c7a65b88;box-shadow:0 18px 42px #0009}
+.match-top{display:flex;justify-content:space-between;gap:10px;align-items:center}
+.round{font-family:"Special Elite";font-size:.7rem;color:#c7a65b;letter-spacing:.08em}
+.match-no{font-family:"Bebas Neue";font-size:1.25rem;color:#d99aa2}
+.date{margin:16px 0 13px;color:#999084;font-size:.82rem}
+.teams{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:8px}
+.team{font-weight:800;font-size:1.05rem;line-height:1.25}
+.teams .team:last-child{text-align:right}
+.vs{font-family:"Bebas Neue";color:#c7a65b;font-size:1.1rem}
+.rules-box{border:1px dashed rgba(199,166,91,.4);padding:25px;border-radius:18px;background:#ffffff04}
+.rules-box ol{margin:0;padding-left:22px;color:#c6beb2;line-height:1.8}
+.contact-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.contact-card{padding:18px;border:1px solid #ffffff12;background:#ffffff04;border-radius:15px}
+.team-name{font-weight:800;font-size:1.05rem;margin-bottom:14px}
+.captain,.phone{font-size:.88rem;color:#c4bbae;margin-top:8px}
+.captain span,.phone span{display:block;font:10px "Special Elite";letter-spacing:.12em;color:#9b9185;margin-bottom:3px}
+.cricket-note{font-family:"Special Elite";font-size:.82rem;color:#8f877c;margin-top:25px}
+@media(max-width:900px){.matches{grid-template-columns:repeat(2,1fr)}.contact-grid{grid-template-columns:repeat(2,1fr)}.cricket-stats{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:600px){.matches,.contact-grid{grid-template-columns:1fr}.cricket-title{font-size:4.5rem}}
+</style></head><body>
+<div class="cursor"></div>
+<nav class="nav"><a class="brand" href="index.html">MEDLEY <span>'26</span></a><div class="navlinks">
+<a href="index.html">HOME</a><a href="donate.html">FUNDRAISER</a><a href="sports.html">SPORTS</a><a class="active" href="cricket.html">CRICKET</a><a href="events.html">EVENT DETAILS</a>
+</div></nav>
+<main>
+<section class="cricket-hero"><div class="wrap reveal">
+<div class="stamp">FIELD OPERATION · BOX CRICKET 2026</div>
+<div class="cricket-kicker">CASE FILE // THE CRICKET EXPERIMENT</div>
+<h1 class="cricket-title">CE NSE BOX<br><em>CRICKET</em> 2026</h1>
+<p class="cricket-lead">The lab has temporarily replaced test tubes with cricket bats. Here is the tournament fixture, decoded from the official fixture sheet — from the opening league/seeding matches all the way to the final.</p>
+<div class="cricket-stats">
+<div class="stat"><strong>24</strong><span>Teams listed for tournament</span></div>
+<div class="stat"><strong>26</strong><span>League / seeding slots</span></div>
+<div class="stat"><strong>16</strong><span>Round-of-16 places</span></div>
+<div class="stat"><strong>1</strong><span>Champion at the end</span></div>
+</div>
+</div></section>
+
+<section class="cricket-section"><div class="wrap">
+<h2>THE <em>FIXTURE</em></h2>
+<p class="section-note">Tap a round to isolate the relevant matches. Empty team slots are intentional — they are waiting for the results of the earlier matches.</p>
+<div class="filter-row">
+<button class="filter active" data-round="all">ALL MATCHES</button>
+<button class="filter" data-round="league">LEAGUE / SEEDING</button>
+<button class="filter" data-round="r16">ROUND OF 16</button>
+<button class="filter" data-round="qf">QUARTERFINALS</button>
+<button class="filter" data-round="sf">SEMIFINALS</button>
+<button class="filter" data-round="final">FINAL</button>
+</div>
+<div class="matches">
+    <article class="match-card reveal" data-round="league">
+      <div class="match-top"><span class="round">ROUND OF 26 — LEAGUE / SEEDING MATCHES</span><span class="match-no">M1</span></div>
+      <div class="date">31 Aug 2026 <b>·</b> 10:00 - 11:00 Am</div>
+      <div class="teams"><div class="team">I-STEM 5</div><div class="vs">VS</div><div class="team">Heterojunction Hitters</div></div>
+    </article>
+
+    <article class="match-card reveal" data-round="league">
+      <div class="match-top"><span class="round">ROUND OF 26 — LEAGUE / SEEDING MATCHES</span><span class="match-no">M3</span></div>
+      <div class="date">31 Aug 2026 <b>·</b> 11:00 - 12:00 pm</div>
+      <div class="teams"><div class="team">Agnit Amplifiers</div><div class="vs">VS</div><div class="team">Smashers</div></div>
+    </article>
+
+    <article class="match-card reveal" data-round="league">
+      <div class="match-top"><span class="round">ROUND OF 26 — LEAGUE / SEEDING MATCHES</span><span class="match-no">M4</span></div>
+      <div class="date">31 Aug 2026 <b>·</b> 12:00 - 1:00 Pm</div>
+      <div class="teams"><div class="team">Dare Devils</div><div class="vs">VS</div><div class="team">NNFC</div></div>
+    </article>
+
+    <article class="match-card reveal" data-round="league">
+      <div class="match-top"><span class="round">ROUND OF 26 — LEAGUE / SEEDING MATCHES</span><span class="match-no">M5</span></div>
+      <div class="date">31 Aug 2026 <b>·</b> 2:00 - 3:00 Pm</div>
+      <div class="teams"><div class="team">FDML</div><div class="vs">VS</div><div class="team">KVSR</div></div>
+    </article>
+
+    <article class="match-card reveal" data-round="league">
+      <div class="match-top"><span class="round">ROUND OF 26 — LEAGUE / SEEDING MATCHES</span><span class="match-no">M6</span></div>
+      <div class="date">31 Aug 2026 <b>·</b> 3:00 - 4:00 Pm</div>
+      <div class="teams"><div class="team">Quantum Boxers</div><div class="vs">VS</div><div class="team">Lab on a Pitch</div></div>
+    </article>
+
+    <article class="match-card reveal" data-round="league">
+      <div class="match-top"><span class="round">ROUND OF 26 — LEAGUE / SEEDING MATCHES</span><span class="match-no">M7</span></div>
+      <div class="date">31 Aug 2026 <b>·</b> 4:00 - 5:00 Pm</div>
+      <div class="teams"><div class="team">PO Panthers</div><div class="vs">VS</div><div class="team">Utility</div></div>
+    </article>
+
+    <article class="match-card reveal" data-round="league">
+      <div class="match-top"><span class="round">ROUND OF 26 — LEAGUE / SEEDING MATCHES</span><span class="match-no">M8</span></div>
+      <div class="date">01 Sep 2026 <b>·</b> 10:00 - 11:00 Am</div>
+      <div class="teams"><div class="team">Phase Changers</div><div class="vs">VS</div><div class="team">Excitons</div></div>
+    </article>
+
+    <article class="match-card reveal" data-round="league">
+      <div class="match-top"><span class="round">ROUND OF 26 — LEAGUE / SEEDING MATCHES</span><span class="match-no">M9</span></div>
+      <div class="date">01 Sep 2026 <b>·</b> 11:00 - 12:00 pm</div>
+      <div class="teams"><div class="team">Toxic</div><div class="vs">VS</div><div class="team">Resonators</div></div>
+    </article>
+
+    <article class="match-card reveal" data-round="league">
+      <div class="match-top"><span class="round">ROUND OF 26 — LEAGUE / SEEDING MATCHES</span><span class="match-no">M10</span></div>
+      <div class="date">01 Sep 2026 <b>·</b> 12:00 - 1:00 Pm</div>
+      <div class="teams"><div class="team">Intuition × Confusion</div><div class="vs">VS</div><div class="team">Crystal Warriors</div></div>
+    </article>
+
+    <article class="match-card reveal" data-round="league">
+      <div class="match-top"><span class="round">ROUND OF 26 — LEAGUE / SEEDING MATCHES</span><span class="match-no">M11</span></div>
+      <div class="date">01 Sep 2026 <b>·</b> 2:00 - 3:00 Pm</div>
+      <div class="teams"><div class="team">6 Floor Skippers</div><div class="vs">VS</div><div class="team">MDHS Bullets</div></div>
+    </article>
+
+    <article class="match-card reveal" data-round="league">
+      <div class="match-top"><span class="round">ROUND OF 26 — LEAGUE / SEEDING MATCHES</span><span class="match-no">M12</span></div>
+      <div class="date">01 Sep 2026 <b>·</b> 3:00 - 4:00 Pm</div>
+      <div class="teams"><div class="team">OG PRL</div><div class="vs">VS</div><div class="team">G-24</div></div>
+    </article>
+
+    <article class="match-card reveal" data-round="r16">
+      <div class="match-top"><span class="round">ROUND OF 16</span><span class="match-no">R16-1</span></div>
+      <div class="date">02 Sep 2026 <b>·</b> 10:00 - 11:00 Am</div>
+      <div class="teams"><div class="team">QUALIFIER</div><div class="vs">VS</div><div class="team">QUALIFIER</div></div>
+    </article>
+
+    <article class="match-card reveal" data-round="r16">
+      <div class="match-top"><span class="round">ROUND OF 16</span><span class="match-no">R16-2</span></div>
+      <div class="date">02 Sep 2026 <b>·</b> 11:00 - 12:00 pm</div>
+      <div class="teams"><div class="team">QUALIFIER</div><div class="vs">VS</div><div class="team">QUALIFIER</div></div>
+    </article>
+
+    <article class="match-card reveal" data-round="r16">
+      <div class="match-top"><span class="round">ROUND OF 16</span><span class="match-no">R16-3</span></div>
+      <div class="date">02 Sep 2026 <b>·</b> 12:00 - 1:00 Pm</div>
+      <div class="teams"><div class="team">QUALIFIER</div><div class="vs">VS</div><div class="team">QUALIFIER</div></div>
+    </article>
+
+    <article class="match-card reveal" data-round="r16">
+      <div class="match-top"><span class="round">ROUND OF 16</span><span class="match-no">R16-4</span></div>
+      <div class="date">02 Sep 2026 <b>·</b> 2:00 - 3:00 Pm</div>
+      <div class="teams"><div class="team">QUALIFIER</div><div class="vs">VS</div><div class="team">QUALIFIER</div></div>
+    </article>
+
+    <article class="match-card reveal" data-round="r16">
+      <div class="match-top"><span class="round">ROUND OF 16</span><span class="match-no">R16-5</span></div>
+      <div class="date">02 Sep 2026 <b>·</b> 3:00 - 4:00 Pm</div>
+      <div class="teams"><div class="team">QUALIFIER</div><div class="vs">VS</div><div class="team">QUALIFIER</div></div>
+    </article>
+
+    <article class="match-card reveal" data-round="r16">
+      <div class="match-top"><span class="round">ROUND OF 16</span><span class="match-no">R16-6</span></div>
+      <div class="date">02 Sep 2026 <b>·</b> 4:00 - 5:00 Pm</div>
+      <div class="teams"><div class="team">QUALIFIER</div><div class="vs">VS</div><div class="team">QUALIFIER</div></div>
+    </article>
+
+    <article class="match-card reveal" data-round="r16">
+      <div class="match-top"><span class="round">ROUND OF 16</span><span class="match-no">R16-7</span></div>
+      <div class="date">03 Sep 2026 <b>·</b> 10: 00 - 11:00 Am</div>
+      <div class="teams"><div class="team">QUALIFIER</div><div class="vs">VS</div><div class="team">QUALIFIER</div></div>
+    </article>
+
+    <article class="match-card reveal" data-round="r16">
+      <div class="match-top"><span class="round">ROUND OF 16</span><span class="match-no">R16-8</span></div>
+      <div class="date">03 Sep 2026 <b>·</b> 11:00 - 12:00 Pm</div>
+      <div class="teams"><div class="team">QUALIFIER</div><div class="vs">VS</div><div class="team">QUALIFIER</div></div>
+    </article>
+
+    <article class="match-card reveal" data-round="qf">
+      <div class="match-top"><span class="round">QUARTERFINALS</span><span class="match-no">QF-1</span></div>
+      <div class="date">03 Sep 2026 <b>·</b> 12:00 - 1:00 Pm</div>
+      <div class="teams"><div class="team">QUALIFIER</div><div class="vs">VS</div><div class="team">QUALIFIER</div></div>
+    </article>
+
+    <article class="match-card reveal" data-round="qf">
+      <div class="match-top"><span class="round">QUARTERFINALS</span><span class="match-no">QF-2</span></div>
+      <div class="date">03 Sep 2026 <b>·</b> 2:00 - 3:00 Pm</div>
+      <div class="teams"><div class="team">QUALIFIER</div><div class="vs">VS</div><div class="team">QUALIFIER</div></div>
+    </article>
+
+    <article class="match-card reveal" data-round="qf">
+      <div class="match-top"><span class="round">QUARTERFINALS</span><span class="match-no">QF-3</span></div>
+      <div class="date">03 Sep 2026 <b>·</b> 3:00 - 4:00 pm</div>
+      <div class="teams"><div class="team">QUALIFIER</div><div class="vs">VS</div><div class="team">QUALIFIER</div></div>
+    </article>
+
+    <article class="match-card reveal" data-round="qf">
+      <div class="match-top"><span class="round">QUARTERFINALS</span><span class="match-no">QF-4</span></div>
+      <div class="date">03 Sep 2026 <b>·</b> 4:00 - 5:00 Pm</div>
+      <div class="teams"><div class="team">QUALIFIER</div><div class="vs">VS</div><div class="team">QUALIFIER</div></div>
+    </article>
+
+    <article class="match-card reveal" data-round="sf">
+      <div class="match-top"><span class="round">SEMIFINALS</span><span class="match-no">SF-1</span></div>
+      <div class="date">04 Sep 2026 <b>·</b> 10:00 - 11:00 Am</div>
+      <div class="teams"><div class="team">QUALIFIER</div><div class="vs">VS</div><div class="team">QUALIFIER</div></div>
+    </article>
+
+    <article class="match-card reveal" data-round="sf">
+      <div class="match-top"><span class="round">SEMIFINALS</span><span class="match-no">SF-2</span></div>
+      <div class="date">04 Sep 2026 <b>·</b> 11:00 - 12:00 Pm</div>
+      <div class="teams"><div class="team">QUALIFIER</div><div class="vs">VS</div><div class="team">QUALIFIER</div></div>
+    </article>
+
+    <article class="match-card reveal" data-round="final">
+      <div class="match-top"><span class="round">🏆 FINAL</span><span class="match-no">FINAL</span></div>
+      <div class="date">04 Sep 2026 <b>·</b> 12:00 - 1:00 Pm</div>
+      <div class="teams"><div class="team">QUALIFIER</div><div class="vs">VS</div><div class="team">QUALIFIER</div></div>
+    </article></div>
+</div></section>
+
+<section class="cricket-section"><div class="wrap">
+<h2>HOW THE <em>BRACKET WORKS</em></h2>
+<div class="rules-box"><ol><li>A total of 24 teams will participate in the tournament.</li><li>In the Round of 24, all 24 teams will play, resulting in 12 winners.</li><li>The 12  winning teams will qualify directly for the Round of 16.</li><li>The remaining 4 qualification spots will be awarded to the best-performing teams based on Net Run Rate (NRR), making a total of 16 qualified teams.</li><li>The Round of 16 will consist of 16 teams playing 8 knockout matches, with the 8 winners advancing to the Quarterfinals.</li><li>The Quarterfinals will consist of 8 teams playing 4 matches, with the 4 winners advancing to the Semifinals.</li><li>The Semifinals will consist of 4 teams playing 2 matches, with the 2 winners advancing to the Final.</li><li>The winners of the two Semifinals will play in the Final to determine the Champion.</li></ol></div>
+<p class="cricket-note">Source: CeNSE Box Cricket 2026 – Tournament Fixture.</p>
+</div></section>
+
+<section class="cricket-section"><div class="wrap">
+<h2>TEAM <em>CONTACTS</em></h2>
+<p class="section-note">Captain / representative details reproduced from the supplied tournament fixture sheet.</p>
+<div class="contact-grid">
+    <div class="contact-card reveal">
+      <div class="team-name">6 floor skippers</div>
+      <div class="captain"><span>CAPTAIN</span>Abdul Malik</div>
+      <div class="phone"><span>CONTACT</span>7907370602</div>
+    </div>
+    
+    <div class="contact-card reveal">
+      <div class="team-name">agnit amplifier's</div>
+      <div class="captain"><span>CAPTAIN</span>Nithin </div>
+      <div class="phone"><span>CONTACT</span>6363403423</div>
+    </div>
+    
+    <div class="contact-card reveal">
+      <div class="team-name">crystal warriors</div>
+      <div class="captain"><span>CAPTAIN</span>Syed Helal</div>
+      <div class="phone"><span>CONTACT</span>9566305589</div>
+    </div>
+    
+    <div class="contact-card reveal">
+      <div class="team-name">dare devils</div>
+      <div class="captain"><span>CAPTAIN</span>Shiva Krishna</div>
+      <div class="phone"><span>CONTACT</span>8123491958</div>
+    </div>
+    
+    <div class="contact-card reveal">
+      <div class="team-name">excitons</div>
+      <div class="captain"><span>CAPTAIN</span>Sarang</div>
+      <div class="phone"><span>CONTACT</span>8700953011</div>
+    </div>
+    
+    <div class="contact-card reveal">
+      <div class="team-name">fdml</div>
+      <div class="captain"><span>CAPTAIN</span>Kishore Sivaram </div>
+      <div class="phone"><span>CONTACT</span>8428627540</div>
+    </div>
+    
+    <div class="contact-card reveal">
+      <div class="team-name">g-24</div>
+      <div class="captain"><span>CAPTAIN</span>Surendra Yadav</div>
+      <div class="phone"><span>CONTACT</span>+91 9986761594</div>
+    </div>
+    
+    <div class="contact-card reveal">
+      <div class="team-name">heterojunction hitters</div>
+      <div class="captain"><span>CAPTAIN</span>Atanu</div>
+      <div class="phone"><span>CONTACT</span>8011089862</div>
+    </div>
+    
+    <div class="contact-card reveal">
+      <div class="team-name">i-stem 5</div>
+      <div class="captain"><span>CAPTAIN</span>Arun Balaji</div>
+      <div class="phone"><span>CONTACT</span>9524433951</div>
+    </div>
+    
+    <div class="contact-card reveal">
+      <div class="team-name">intuition × confusion ✓</div>
+      <div class="captain"><span>CAPTAIN</span>Abhinay</div>
+      <div class="phone"><span>CONTACT</span>8765688036</div>
+    </div>
+    
+    <div class="contact-card reveal">
+      <div class="team-name">kvsr</div>
+      <div class="captain"><span>CAPTAIN</span>Vinodkumar </div>
+      <div class="phone"><span>CONTACT</span>9742763374</div>
+    </div>
+    
+    <div class="contact-card reveal">
+      <div class="team-name">lab on a pitch</div>
+      <div class="captain"><span>CAPTAIN</span>Bipul</div>
+      <div class="phone"><span>CONTACT</span>7086680105</div>
+    </div>
+    
+    <div class="contact-card reveal">
+      <div class="team-name">mdhs bullets</div>
+      <div class="captain"><span>CAPTAIN</span>Nandan</div>
+      <div class="phone"><span>CONTACT</span>8780664194</div>
+    </div>
+    
+    <div class="contact-card reveal">
+      <div class="team-name">OG prl</div>
+      <div class="captain"><span>CAPTAIN</span>Rakshitha Kallega</div>
+      <div class="phone"><span>CONTACT</span>+91 95917 78052</div>
+    </div>
+    
+    <div class="contact-card reveal">
+      <div class="team-name">phase changers</div>
+      <div class="captain"><span>CAPTAIN</span>Kartick Biswas</div>
+      <div class="phone"><span>CONTACT</span>9564226727</div>
+    </div>
+    
+    <div class="contact-card reveal">
+      <div class="team-name">po panthers</div>
+      <div class="captain"><span>CAPTAIN</span>Praveenkumar </div>
+      <div class="phone"><span>CONTACT</span>8553174139</div>
+    </div>
+    
+    <div class="contact-card reveal">
+      <div class="team-name">quantum boxers</div>
+      <div class="captain"><span>CAPTAIN</span>Shriganesh N</div>
+      <div class="phone"><span>CONTACT</span>7760469622</div>
+    </div>
+    
+    <div class="contact-card reveal">
+      <div class="team-name">resonators</div>
+      <div class="captain"><span>CAPTAIN</span>Jagadeesh R</div>
+      <div class="phone"><span>CONTACT</span>9074296106</div>
+    </div>
+    
+    <div class="contact-card reveal">
+      <div class="team-name">smashers</div>
+      <div class="captain"><span>CAPTAIN</span>Manvan</div>
+      <div class="phone"><span>CONTACT</span>9886655904</div>
+    </div>
+    
+    <div class="contact-card reveal">
+      <div class="team-name">tbd</div>
+      <div class="captain"><span>CAPTAIN</span>Abhisek </div>
+      <div class="phone"><span>CONTACT</span>7978103597</div>
+    </div>
+    
+    <div class="contact-card reveal">
+      <div class="team-name">titans</div>
+      <div class="captain"><span>CAPTAIN</span>Shivam Sartaz</div>
+      <div class="phone"><span>CONTACT</span>9661893676</div>
+    </div>
+    
+    <div class="contact-card reveal">
+      <div class="team-name">toxic</div>
+      <div class="captain"><span>CAPTAIN</span>Shasank M</div>
+      <div class="phone"><span>CONTACT</span>7022052935</div>
+    </div>
+    
+    <div class="contact-card reveal">
+      <div class="team-name">utility</div>
+      <div class="captain"><span>CAPTAIN</span>Vijay y</div>
+      <div class="phone"><span>CONTACT</span>9036009418</div>
+    </div>
+    
+    <div class="contact-card reveal">
+      <div class="team-name">Vinod Kumar Team</div>
+      <div class="captain"><span>CAPTAIN</span>Vinodkumar SM</div>
+      <div class="phone"><span>CONTACT</span>9742763374</div>
+    </div>
+    </div>
+<p class="cricket-note">For a public-facing website, consider removing mobile numbers if the captains have not explicitly agreed to public posting.</p>
+</div></section>
+</main>
+<footer><div class="mono">MEDLEY 2026 · CeNSE · IISc BENGALURU</div><div style="margin-top:10px">The researchers have lost the cricket schedule. We found it.</div></footer>
+<script src="script.js"></script><script>
+document.querySelectorAll('.filter').forEach(btn=>{
+  btn.addEventListener('click',()=>{
+    document.querySelectorAll('.filter').forEach(b=>b.classList.remove('active'));
+    btn.classList.add('active');
+    const value=btn.dataset.round;
+    document.querySelectorAll('.match-card').forEach(card=>{
+      card.style.display=(value==='all'||card.dataset.round===value)?'block':'none';
+    });
+  });
+});
+</script>
+</body></html>
